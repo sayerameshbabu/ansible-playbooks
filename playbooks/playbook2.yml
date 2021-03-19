@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+    - name: replace module
+      replace:
+        path: file1.txt
+        regexp: 'there'
+        replace: 'new_text'
+    - name: fetch module
+      fetch:
+        src: file4.txt
+        dest: /home/centos/playbooks/file4.txt
+...
+

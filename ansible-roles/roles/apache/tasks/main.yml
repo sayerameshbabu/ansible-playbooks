@@ -1,0 +1,18 @@
+---
+    - name: install apache httpd
+      package:
+        name: httpd
+        state: present
+      notify: start httpd service
+    - name: edit configuration file
+      replace:
+        path: /etc/httpd/conf/httpd.conf
+        regexp: ^80$
+        replace: "{{ port }}"
+      notify: start httpd service
+    - name: copy file
+      copy:
+        src: index.html
+        dest: /var/www/html/
+...
+

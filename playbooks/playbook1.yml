@@ -1,0 +1,13 @@
+---
+- hosts: web
+  name: this is play1
+  tasks:
+    - name: this is first task/module
+      get_url:
+        url: https://github.com/sayerameshbabu/vivek/archive/master.zip
+        dest: /home/centos
+    - name: this is my second task/module - for copying files
+      copy:
+        src: file242.txt 
+        dest: /home/centos
+...

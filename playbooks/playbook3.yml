@@ -1,0 +1,26 @@
+---
+- hosts: all
+  tasks:
+    - name: module1 - install httpd
+      package:
+        name: httpd
+        state: present
+    - name: module3 - starting  httpd service
+      service:
+        name: httpd
+        state: started
+    - name: module2 - editing configuration file
+      replace:
+        path: /etc/httpd/conf/httpd.conf
+        regexp: "ramesh"
+        replace: "suresh"
+      become: yes
+      notify: restarting httpd service
+   
+  handlers:
+    - name: restarting httpd service
+      become: yes
+      service:
+        name: httpd
+        state: restarted
+...
