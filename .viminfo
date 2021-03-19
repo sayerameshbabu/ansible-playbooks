@@ -7,11 +7,14 @@
 
 # hlsearch on (H) or off (h):
 ~H
+# Last Substitute String:
+$
+
 # Command Line History (newest to oldest):
 :wq
+:q
 :wq!
 :Wq
-:q
 :se nu
 :Q
 :q!
@@ -25,7 +28,9 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+""0	LINE	0
+	     
+"1	LINE	0
 	     
 "2	LINE	0
 	    - name: copy module
@@ -48,19 +53,20 @@
 	 
 
 # File marks:
-'0  1  1  ~/.gitignore
-'1  5  1  ~/ansible-roles/roles/apache/handlers/main.yml
-'2  11  28  ~/ansible-roles/roles/apache/tasks/main.yml
-'3  7  15  ~/ansible-roles/playbook.yml
-'4  6  2  ~/ansible-roles/roles/apache/handlers/main.yml
-'5  18  0  ~/ansible-roles/roles/apache/tasks/main.yml
-'6  23  8  ~/ansible-roles/playbook-apache.yml
-'7  17  20  ~/ansible-roles/playbook-apache.yml
-'8  18  28  ~/ansible-roles/playbook-apache.yml
-'9  8  7  ~/ansible-roles/playbook-apache.yml
+'0  1  5  ~/.gitignore
+'1  1  0  ~/.git
+'2  5  1  ~/ansible-roles/roles/apache/handlers/main.yml
+'3  11  28  ~/ansible-roles/roles/apache/tasks/main.yml
+'4  7  15  ~/ansible-roles/playbook.yml
+'5  6  2  ~/ansible-roles/roles/apache/handlers/main.yml
+'6  18  0  ~/ansible-roles/roles/apache/tasks/main.yml
+'7  23  8  ~/ansible-roles/playbook-apache.yml
+'8  17  20  ~/ansible-roles/playbook-apache.yml
+'9  18  28  ~/ansible-roles/playbook-apache.yml
 
 # Jumplist (newest first):
--'  1  1  ~/.gitignore
+-'  1  5  ~/.gitignore
+-'  1  0  ~/.git
 -'  5  1  ~/ansible-roles/roles/apache/handlers/main.yml
 -'  6  0  ~/ansible-roles/roles/apache/handlers/main.yml
 -'  11  28  ~/ansible-roles/roles/apache/tasks/main.yml
@@ -156,14 +162,12 @@
 -'  6  70  ~/aws.ini
 -'  1  0  ~/aws.ini
 -'  1  2  ~/conf1.yaml
--'  1  2  ~/conf1.yaml
--'  6  70  ~/aws.ini
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	"	1	1
-	^	1	2
+	"	1	5
+	^	1	6
 	.	1	1
 	+	1	1
 
