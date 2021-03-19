@@ -53,19 +53,20 @@ $
 	 
 
 # File marks:
-'0  1  5  ~/.gitignore
-'1  1  0  ~/.git
-'2  5  1  ~/ansible-roles/roles/apache/handlers/main.yml
-'3  11  28  ~/ansible-roles/roles/apache/tasks/main.yml
-'4  7  15  ~/ansible-roles/playbook.yml
-'5  6  2  ~/ansible-roles/roles/apache/handlers/main.yml
-'6  18  0  ~/ansible-roles/roles/apache/tasks/main.yml
-'7  23  8  ~/ansible-roles/playbook-apache.yml
-'8  17  20  ~/ansible-roles/playbook-apache.yml
-'9  18  28  ~/ansible-roles/playbook-apache.yml
+'0  2  1  ~/.gitignore
+'1  1  5  ~/.gitignore
+'2  1  0  ~/.git
+'3  5  1  ~/ansible-roles/roles/apache/handlers/main.yml
+'4  11  28  ~/ansible-roles/roles/apache/tasks/main.yml
+'5  7  15  ~/ansible-roles/playbook.yml
+'6  6  2  ~/ansible-roles/roles/apache/handlers/main.yml
+'7  18  0  ~/ansible-roles/roles/apache/tasks/main.yml
+'8  23  8  ~/ansible-roles/playbook-apache.yml
+'9  17  20  ~/ansible-roles/playbook-apache.yml
 
 # Jumplist (newest first):
--'  1  5  ~/.gitignore
+-'  2  1  ~/.gitignore
+-'  1  0  ~/.gitignore
 -'  1  0  ~/.git
 -'  5  1  ~/ansible-roles/roles/apache/handlers/main.yml
 -'  6  0  ~/ansible-roles/roles/apache/handlers/main.yml
@@ -166,10 +167,11 @@ $
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	"	1	5
-	^	1	6
-	.	1	1
+	"	2	1
+	^	2	2
+	.	2	1
 	+	1	1
+	+	2	1
 
 > ~/ansible-roles/roles/apache/handlers/main.yml
 	"	5	1
